@@ -1,0 +1,4 @@
+module-info.class
+org\invokeproject\SecondaryController.class
+org\invokeproject\App.class
+org\invokeproject\PrimaryController.class

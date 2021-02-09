@@ -1,0 +1,8 @@
+org\invokeproject\MainServer.class
+org\invokeproject\ServerController.class
+org\invokeproject\MainServer$1.class
+module-info.class
+org\invokeproject\PrimaryController.class
+org\invokeproject\MainServer$2.class
+org\invokeproject\SecondaryController.class
+org\invokeproject\App.class

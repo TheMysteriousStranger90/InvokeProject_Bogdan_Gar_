@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="400.0" maxWidth="600.0" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.invokeproject.ServerController">
+   <right>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #9144DE;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="14.0" layoutY="14.0" prefHeight="35.0" prefWidth="130.0" text="ПОРТ" textFill="#383838">
+               <font>
+                  <Font name="Tw Cen MT Condensed" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="enterNumberPortField" layoutX="14.0" layoutY="49.0" onKeyTyped="#numberFieldKeyTyped" prefHeight="30.0" prefWidth="132.0" promptText="Введите номер порта" />
+            <Button fx:id="exitButton" layoutX="14.0" layoutY="361.0" mnemonicParsing="false" onAction="#exitButtonOnAction" style="-fx-background-color: #383838;" text="ВЫХОД" textFill="#9144de">
+               <font>
+                  <Font name="Jokerman" size="11.0" />
+               </font>
+            </Button>
+            <Label layoutX="14.0" layoutY="96.0" prefHeight="35.0" prefWidth="130.0" text="КОЛИЧЕСТВО ПОЛЬЗ." textFill="#383838">
+               <font>
+                  <Font name="Tw Cen MT Condensed" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="enterNumberUsersField" layoutX="14.0" layoutY="131.0" onKeyTyped="#numberFieldKeyTyped" prefHeight="30.0" prefWidth="132.0" promptText="Введите кол. польз." />
+            <Label fx:id="labelErrorMessage" layoutX="14.0" layoutY="200.0" prefHeight="35.0" prefWidth="182.0" textFill="#383838">
+               <font>
+                  <Font name="Tw Cen MT Condensed" size="14.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+   </right>
+   <left>
+      <AnchorPane prefHeight="400.0" prefWidth="400.0" style="-fx-background-color: #383838;" BorderPane.alignment="CENTER">
+         <children>
+            <TextArea fx:id="textArea" layoutX="14.0" layoutY="14.0" prefHeight="335.0" prefWidth="370.0" promptText="Запустите сервер..." />
+            <Button fx:id="startServerButton" layoutX="14.0" layoutY="361.0" mnemonicParsing="false" onAction="#startServerButtonOnAction" style="-fx-background-color: #9144DE;" text="ЗАПУСТИТЬ СЕРВЕР" textFill="#383838">
+               <font>
+                  <Font name="Jokerman" size="11.0" />
+               </font>
+            </Button>
+            <Button fx:id="stopServerButton" layoutX="257.0" layoutY="361.0" mnemonicParsing="false" onAction="#stopServerButtonOnAction" style="-fx-background-color: #9144DE;" text="ОСТАНОВИТЬ СЕРВЕР" textFill="#383838">
+               <font>
+                  <Font name="Jokerman" size="11.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </left>
+</BorderPane>

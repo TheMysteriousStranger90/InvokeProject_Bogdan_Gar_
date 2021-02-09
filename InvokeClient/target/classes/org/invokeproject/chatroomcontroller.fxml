@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="600.0" maxWidth="800.0" minHeight="600.0" minWidth="800.0" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.invokeproject.ChatRoomController">
+   <right>
+      <AnchorPane prefHeight="600.0" prefWidth="300.0" style="-fx-background-color: #9144DE;" BorderPane.alignment="CENTER">
+         <children>
+            <TabPane layoutX="14.0" layoutY="9.0" prefHeight="465.0" prefWidth="274.0" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab text="ОНЛАЙН">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="274.0">
+                           <children>
+                              <ListView layoutX="6.0" layoutY="7.0" prefHeight="322.0" prefWidth="262.0" style="-fx-background-color: #383838;" />
+                              <ScrollBar layoutX="255.0" layoutY="7.0" orientation="VERTICAL" prefHeight="322.0" prefWidth="15.0" />
+                              <ListView fx:id="listView" layoutX="6.0" layoutY="7.0" prefHeight="322.0" prefWidth="250.0" />
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+                <Tab>
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <ListView layoutX="6.0" layoutY="7.0" prefHeight="322.0" prefWidth="262.0" style="-fx-background-color: #383838;" />
+                              <ScrollBar layoutX="255.0" layoutY="7.0" orientation="VERTICAL" prefHeight="322.0" prefWidth="15.0" />
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+              </tabs>
+            </TabPane>
+            <Line endX="172.199951171875" layoutX="115.0" layoutY="570.0" startX="-100.0" strokeWidth="2.0" />
+            <Button fx:id="exitButton" layoutX="92.0" layoutY="475.0" mnemonicParsing="false" onAction="#exitButtonOnAction2" prefHeight="35.0" prefWidth="116.0" style="-fx-background-color: #383838;" text="ВЫЙТИ" textFill="#9144de">
+               <font>
+                  <Font name="Jokerman" size="13.0" />
+               </font>
+            </Button>
+         </children></AnchorPane>
+   </right>
+   <center>
+      <AnchorPane prefHeight="600.0" prefWidth="500.0" style="-fx-background-color: #383838;" BorderPane.alignment="CENTER">
+         <children>
+            <TextArea fx:id="messageField" layoutX="14.0" layoutY="423.0" prefHeight="150.0" prefWidth="300.0" promptText="Введите сообщение...">
+               <font>
+                  <Font name="Tw Cen MT Condensed" size="13.0" />
+               </font></TextArea>
+            <Button fx:id="sendMessageButton" layoutX="335.0" layoutY="537.0" mnemonicParsing="false" onAction="#sendMessageButtonOnAction" prefHeight="35.0" prefWidth="116.0" style="-fx-background-color: #9144DE;" text="ОТПРАВИТЬ" textFill="#383838">
+               <font>
+                  <Font name="Jokerman" size="13.0" />
+               </font>
+            </Button>
+            <BorderPane layoutX="14.0" layoutY="46.0" prefHeight="362.0" prefWidth="480.0">
+               <left>
+                  <TextArea fx:id="textArea" prefHeight="362.0" prefWidth="466.0" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font size="16.0" />
+                     </font></TextArea>
+               </left></BorderPane>
+            <Label fx:id="labelNameUser" layoutX="14.0" layoutY="8.0" prefHeight="32.0" prefWidth="466.0" style="-fx-background-color: #383838;" textFill="WHITE">
+               <font>
+                  <Font name="Lucida Sans Typewriter Regular" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

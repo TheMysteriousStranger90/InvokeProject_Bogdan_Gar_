@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="600.0" maxWidth="800.0" minHeight="600.0" minWidth="800.0" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #383838;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.invokeproject.ChatController">
+   <left>
+      <AnchorPane maxHeight="600.0" maxWidth="270.0" minHeight="600.0" minWidth="270.0" prefHeight="600.0" prefWidth="270.0" style="-fx-background-color: #9144DE;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="47.0" layoutY="44.0" prefHeight="32.0" prefWidth="175.0" text="InvokeProject">
+               <font>
+                  <Font name="Tw Cen MT Condensed" size="40.0" />
+               </font>
+            </Label>
+            <TextField fx:id="enterNumberPortField" layoutX="47.0" layoutY="511.0" onKeyTyped="#portFieldKeyTyped" prefHeight="30.0" prefWidth="190.0" promptText="Введите номер порта" />
+            <TextField fx:id="enterIPAddressField" layoutX="47.0" layoutY="439.0" prefHeight="30.0" prefWidth="190.0" promptText="Введите IP-адрес" />
+            <Label layoutX="47.0" layoutY="408.0" prefHeight="18.0" prefWidth="100.0" text="IP-адрес">
+               <font>
+                  <Font name="Tw Cen MT Condensed" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="47.0" layoutY="482.0" prefHeight="18.0" prefWidth="100.0" text="Порт">
+               <font>
+                  <Font name="Tw Cen MT Condensed" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="47.0" layoutY="365.0" prefHeight="34.0" prefWidth="190.0" text="Данные о соединении">
+               <font>
+                  <Font name="Tw Cen MT Condensed" size="18.0" />
+               </font>
+            </Label>
+            <Line endX="100.0" layoutX="142.0" layoutY="354.0" startX="-100.0" strokeWidth="2.0" />
+            <Line endX="100.0" layoutX="142.0" layoutY="573.0" startX="-100.0" strokeWidth="2.0" />
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="600.0" prefWidth="534.0" style="-fx-background-color: #383838;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="71.0" layoutY="150.0" prefHeight="45.0" prefWidth="386.0" text="Войти в режим пользователя" textFill="#9144DE">
+               <font>
+                  <Font name="Tw Cen MT Condensed" size="22.0" />
+               </font>
+            </Label>
+            <TextField fx:id="enterLoginField" layoutX="70.0" layoutY="438.0" prefHeight="30.0" prefWidth="190.0" promptText="Введите логин" />
+            <Label layoutX="72.0" layoutY="410.0" prefHeight="18.0" prefWidth="100.0" text="Логин" textFill="#9144DE">
+               <font>
+                  <Font name="Tw Cen MT Condensed" size="14.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="enterPasswordField" layoutX="71.0" layoutY="512.0" prefHeight="30.0" prefWidth="190.0" promptText="Введите пароль" />
+            <Label layoutX="72.0" layoutY="485.0" prefHeight="18.0" prefWidth="100.0" text="Пароль" textFill="#9144DE">
+               <font>
+                  <Font name="Tw Cen MT Condensed" size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="userButton" layoutX="72.0" layoutY="223.0" mnemonicParsing="false" onAction="#enterUserButtonOnAction" prefHeight="35.0" prefWidth="116.0" style="-fx-background-color: #9144DE;" text="ПОЛЬЗОВАТЕЛЬ" textFill="#383838">
+               <font>
+                  <Font name="Jokerman" size="13.0" />
+               </font>
+            </Button>
+            <Label fx:id="errorMessageField" layoutX="71.0" layoutY="28.0" prefHeight="45.0" prefWidth="386.0" textFill="WHITE">
+               <font>
+                  <Font name="Tw Cen MT Condensed" size="16.0" />
+               </font>
+            </Label>
+            <Button fx:id="exitButton" layoutX="400.0" layoutY="553.0" mnemonicParsing="false" onAction="#exitButtonOnAction" prefHeight="35.0" prefWidth="116.0" style="-fx-background-color: #9144DE;" text="ВЫХОД" textFill="#383838">
+               <font>
+                  <Font name="Jokerman" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="resetButton" layoutX="399.0" layoutY="509.0" mnemonicParsing="false" onAction="#resetButtonOnAction" prefHeight="35.0" prefWidth="116.0" style="-fx-background-color: #9144DE;" text="СБРОСИТЬ" textFill="#383838">
+               <font>
+                  <Font name="Jokerman" size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>
